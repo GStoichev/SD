@@ -1,0 +1,7 @@
+﻿  BitmapFileHeader.cpp
+  Generating Code...
+c:\georgi\unirepo\sd\working_with_binaryfiles\consoleapplication1\consoleapplication1\bitmapfileheader.cpp(76): warning C4715: 'BitmapFileHeader::CheckIdetifyer': not all control paths return a value
+  Skipping... (no relevant changes detected)
+  ConsoleApplication1.cpp
+  ConsoleApplication1.vcxproj -> C:\Georgi\uniRepo\SD\Working_With_BinaryFiles\ConsoleApplication1\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> C:\Georgi\uniRepo\SD\Working_With_BinaryFiles\ConsoleApplication1\Debug\ConsoleApplication1.pdb (Partial PDB)
