@@ -1,0 +1,5 @@
+﻿  ConsoleApplication2.cpp
+c:\georgi\unirepo\sd\working_with_binaryfiles\consoleapplication2\consoleapplication2\consoleapplication2.cpp(26): warning C4018: '<': signed/unsigned mismatch
+c:\georgi\unirepo\sd\working_with_binaryfiles\consoleapplication2\consoleapplication2\consoleapplication2.cpp(30): warning C4018: '<': signed/unsigned mismatch
+  ConsoleApplication2.vcxproj -> C:\Georgi\uniRepo\SD\Working_With_BinaryFiles\ConsoleApplication2\Debug\ConsoleApplication2.exe
+  ConsoleApplication2.vcxproj -> C:\Georgi\uniRepo\SD\Working_With_BinaryFiles\ConsoleApplication2\Debug\ConsoleApplication2.pdb (Partial PDB)
