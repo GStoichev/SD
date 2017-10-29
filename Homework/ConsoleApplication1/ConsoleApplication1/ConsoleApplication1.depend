@@ -1,0 +1,60 @@
+# depslib dependency file v1.0
+1508774915 source:c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\bitmapfileheader.cpp
+	"stdafx.h"
+	"BitmapFileHeader.h"
+
+1508585716 c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\stdafx.h
+	"targetver.h"
+	<stdio.h>
+	<tchar.h>
+
+1509104737 c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\targetver.h
+
+1508774336 c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\bitmapfileheader.h
+	<iostream>
+	<fstream>
+
+1509104706 source:c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\consoleapplication1.cpp
+	"Image.h"
+	<fstream>
+	"Thumbnail.h"
+
+1508776106 c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\image.h
+	"BitmapFileHeader.h"
+	"DIBHeader.h"
+	"PixelArray.h"
+	<cmath>
+
+1508774416 c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\dibheader.h
+	<iostream>
+	<fstream>
+
+1508946977 c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\pixelarray.h
+	<iostream>
+	<fstream>
+	<cstring>
+
+1509049754 c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\thumbnail.h
+	<fstream>
+	<iostream>
+	"Image.h"
+
+1508775211 source:c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\dibheader.cpp
+	"stdafx.h"
+	"DIBHeader.h"
+
+1508949716 source:c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\image.cpp
+	"stdafx.h"
+	"Image.h"
+
+1508948969 source:c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\pixelarray.cpp
+	"stdafx.h"
+	"PixelArray.h"
+
+1508585716 source:c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\stdafx.cpp
+	"stdafx.h"
+
+1509104210 source:c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\thumbnail.cpp
+	"stdafx.h"
+	"Thumbnail.h"
+
