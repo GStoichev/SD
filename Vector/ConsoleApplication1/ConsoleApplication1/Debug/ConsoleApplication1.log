@@ -1,0 +1,36 @@
+﻿  ConsoleApplication1.cpp
+c:\georgi\unirepo\sd\vector\consoleapplication1\consoleapplication1\vector.h(54): warning C4018: '<': signed/unsigned mismatch
+  c:\georgi\unirepo\sd\vector\consoleapplication1\consoleapplication1\vector.h(45): note: while compiling class template member function 'Vector<int>::Vector(int,const T)'
+          with
+          [
+              T=int
+          ]
+  c:\georgi\unirepo\sd\vector\consoleapplication1\consoleapplication1\consoleapplication1.cpp(6): note: see reference to function template instantiation 'Vector<int>::Vector(int,const T)' being compiled
+          with
+          [
+              T=int
+          ]
+  c:\georgi\unirepo\sd\vector\consoleapplication1\consoleapplication1\consoleapplication1.cpp(6): note: see reference to class template instantiation 'Vector<int>' being compiled
+c:\georgi\unirepo\sd\vector\consoleapplication1\consoleapplication1\vector.h(204): warning C4018: '<': signed/unsigned mismatch
+  c:\georgi\unirepo\sd\vector\consoleapplication1\consoleapplication1\vector.h(201): note: while compiling class template member function 'void Vector<int>::Print(void)'
+  c:\georgi\unirepo\sd\vector\consoleapplication1\consoleapplication1\consoleapplication1.cpp(10): note: see reference to function template instantiation 'void Vector<int>::Print(void)' being compiled
+c:\georgi\unirepo\sd\vector\consoleapplication1\consoleapplication1\vector.h(162): warning C4018: '<': signed/unsigned mismatch
+  c:\georgi\unirepo\sd\vector\consoleapplication1\consoleapplication1\vector.h(159): note: while compiling class template member function 'void Vector<int>::Resize(void)'
+  c:\georgi\unirepo\sd\vector\consoleapplication1\consoleapplication1\vector.h(51): note: see reference to function template instantiation 'void Vector<int>::Resize(void)' being compiled
+  c:\georgi\unirepo\sd\vector\consoleapplication1\consoleapplication1\vector.h(45): note: while compiling class template member function 'Vector<int>::Vector(int,const T)'
+          with
+          [
+              T=int
+          ]
+  c:\georgi\unirepo\sd\vector\consoleapplication1\consoleapplication1\consoleapplication1.cpp(6): note: see reference to function template instantiation 'Vector<int>::Vector(int,const T)' being compiled
+          with
+          [
+              T=int
+          ]
+c:\georgi\unirepo\sd\vector\consoleapplication1\consoleapplication1\vector.h(176): warning C4018: '<': signed/unsigned mismatch
+  c:\georgi\unirepo\sd\vector\consoleapplication1\consoleapplication1\vector.h(172): note: while compiling class template member function 'void Vector<int>::CopyFunc(const Vector<int> &)'
+  c:\georgi\unirepo\sd\vector\consoleapplication1\consoleapplication1\vector.h(62): note: see reference to function template instantiation 'void Vector<int>::CopyFunc(const Vector<int> &)' being compiled
+  c:\georgi\unirepo\sd\vector\consoleapplication1\consoleapplication1\vector.h(61): note: while compiling class template member function 'Vector<int>::Vector(const Vector<int> &)'
+  c:\georgi\unirepo\sd\vector\consoleapplication1\consoleapplication1\vector.h(147): note: see reference to function template instantiation 'Vector<int>::Vector(const Vector<int> &)' being compiled
+  ConsoleApplication1.vcxproj -> C:\Georgi\uniRepo\SD\Vector\ConsoleApplication1\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> C:\Georgi\uniRepo\SD\Vector\ConsoleApplication1\Debug\ConsoleApplication1.pdb (Partial PDB)
