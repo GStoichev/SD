@@ -3,7 +3,7 @@
 
 template <typename T> struct Node
 {
-	T top;
+	T value;
 	Node<T>* next;
 };
 template <typename T> class Stack
@@ -23,30 +23,61 @@ private:
 //Constructors
 template <typename T> Stack<T>::Stack()
 {
-	this->size = 0;
-	this->block = new Node<T>;
-	this->block->next = nullptr;
+	this->block = nullptr;
 }
-
 //Methods
 template <typename T> void Stack<T>::Push(T& element)
 {
-	this->size++;
-	Node<T>* newBlock = new Node<T>;
-	newBlock->top = this->block->top;
-	newBlock->next = this->block->next;
-	this->block->top = element;
-	this->block->next = newBlock;
+	try
+	{
+		this->size++;
+		Node<T>* newBlock = new Node<T>;
+		newBlock->next = this->block;
+		newBlock->value = element;
+		this->block = newBlock;
+	}
+	catch (const std::bad_alloc&)
+	{
+		std::cout << "Error : Out of memory!" << std::endl;
+		return;
+	}
+	catch (const std::exception&)
+	{
+		std::cout << "Error : Unknown at Stack<T>::Push" << std::endl;
+		return;
+	}
+	
+
 }
 template <typename T> void Stack<T>::Pop()
 {
-	if (this->size)
+	if (!this->Empty())
 	{
 		this->size--;
-		Node<T>* temp = this->block->next->next;
-		this->block->top = this->block->next->top;
-		delete this->block->next;
-		this->block->next = temp;
+		if (this->Empty())
+		{
+			delete this->block;
+			this->block = nullptr;
+		}
+		else
+		{
+			try
+			{
+				Node<T>* temp = this->block->next;
+				delete this->block;
+				this->block = temp;
+			}
+			catch (const std::bad_alloc&)
+			{
+				std::cout << "Error : Out of memory!" << std::endl;
+				return;
+			}
+			catch (const std::exception&)
+			{
+				std::cout << "Error : Unknown at Stack<T>::Pop" << std::endl;
+			}
+			
+		}
 	}
 	else
 	{
@@ -55,7 +86,7 @@ template <typename T> void Stack<T>::Pop()
 }
 template <typename T> bool Stack<T>::Empty()
 {
-	if (this->block->next == nullptr)
+	if (!this->size)
 	{
 		return true;
 	}
@@ -63,7 +94,13 @@ template <typename T> bool Stack<T>::Empty()
 }
 template <typename T> T& Stack<T>::Top()
 {
-	return this->block->top;
+	if (this->Empty())
+	{
+		std::cout << "Stack is empty!" << std::endl;
+		T empty = NULL; // I'm using this because my methods return reference to top item and I can't return a constant value
+		return empty;
+	}
+	return this->block->value;
 }
 //Destructor
 template <typename T>Stack<T>::~Stack()

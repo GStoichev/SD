@@ -1,3 +1,4 @@
 ﻿  ConsoleApplication1.cpp
+c:\georgi\unirepo\sd\stack\consoleapplication1\consoleapplication1\stack.h(77): warning C4172: returning address of local variable or temporary: empty
   ConsoleApplication1.vcxproj -> C:\Georgi\uniRepo\SD\Stack\ConsoleApplication1\Debug\ConsoleApplication1.exe
   ConsoleApplication1.vcxproj -> C:\Georgi\uniRepo\SD\Stack\ConsoleApplication1\Debug\ConsoleApplication1.pdb (Partial PDB)
