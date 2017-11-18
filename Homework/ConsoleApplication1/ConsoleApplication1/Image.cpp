@@ -16,18 +16,37 @@ Image::Image(const char* location)
 
 //Methods
 Image& Image::Crop(Image image,const int x,const int y,const int width,const int heigth)
-{
+{	  
 	if (this->state == 2)
 	{
 		this->state = 0;
 	}
 	//Check Parameters
 	if (image.infoHeader.GetWidth() < x + width || image.infoHeader.GetHeigth() < y + heigth || x < 0 || y < 0 || width <= 0 || heigth <= 0)
-	{
+	{		 
 		this->state = 2;
 		std::cout << "Entered parameters for croping image are invalide!" << std::endl;
 		return *this;
 	}
+
+
+
+
+
+	//ADDED LATER
+	int padding = 0;
+	if (image.infoHeader.GetPixels() == 24)
+	{
+		padding = width % 4; 
+	}
+	//ADDED LATER
+
+
+
+
+
+
+
 
 	//Copying image to new image
 	*this = image;
@@ -47,10 +66,11 @@ Image& Image::Crop(Image image,const int x,const int y,const int width,const int
 	//Croping a part from image and save it in newBuf
 	for (size_t i = (y*rowWidth + x * bytesPerPixel); i < (y+heigth)*rowWidth ; i += rowWidth)
 	{
-		for (size_t j = 0; j < width * bytesPerPixel; j++)
+		for (size_t j = 0; j < width  * bytesPerPixel; j++)
 		{
 			newBuf[curPos++] = oldBuf[i+j];
 		}
+		curPos += padding; //ADDED LATER
 	}
 
     //Updating new image
@@ -82,7 +102,6 @@ void Image::Load(const char* location)
 		stream.seekg(this->BMPFileHeader.GetOffSet()); // set get pointer of stream at starting position of pixel array
 		size_t size = (((infoHeader.GetPixels()*infoHeader.GetWidth() + 31) / 32) * 4)*infoHeader.GetHeigth(); // size in bytes of image's pixel array
 		this->pixelArray = PixelArray(stream, size);
-		
 	}
 
 	stream.close();

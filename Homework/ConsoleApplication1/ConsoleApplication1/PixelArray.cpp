@@ -20,7 +20,6 @@ PixelArray::PixelArray(std::ifstream& istream,const size_t size)
 	{
 		std::cout << "Error at loading buffer or reading data" << std::endl;
 	}
-	
 }
 PixelArray::PixelArray(const PixelArray& arr)
 {

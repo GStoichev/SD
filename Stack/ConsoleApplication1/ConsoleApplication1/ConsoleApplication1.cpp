@@ -6,21 +6,6 @@
 
 int main()
 {
-	Stack<char> staky;
-	char test = 'A';
-	staky.Push(test);
-	std::cout << staky.Top() << std::endl;
-	staky.Push(++test);
-	std::cout << staky.Top() << std::endl;
-	staky.Push(++test);
-	std::cout << staky.Top() << std::endl;
-	staky.Pop();
-	std::cout << staky.Top() << std::endl;
-	staky.Pop();
-	std::cout << staky.Top() << std::endl;
-	staky.Pop();
-	std::cout << staky.Top() << std::endl;
-
     return 0;
 }
 

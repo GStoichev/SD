@@ -15,8 +15,8 @@ public:
 	T& Front();
 	T& Back();
 	size_t Size();
-	void Pop();
-	void Push(T& element);
+	void PopFront();
+	void PushBack(T& element);
 	bool Empty();
 private:
 	
@@ -33,7 +33,7 @@ template <typename T> Queue<T>::Queue()
 	this->size = 0;
 }
 //Methods
-template <typename T> void Queue<T>::Pop()
+template <typename T> void Queue<T>::PopFront()
 {
 	try
 	{
@@ -55,7 +55,7 @@ template <typename T> void Queue<T>::Pop()
 	}
 	
 }
-template <typename T> void Queue<T>::Push(T& element)
+template <typename T> void Queue<T>::PushBack(T& element)
 {
 	try
 	{

@@ -1,8 +1,5 @@
-﻿  Thumbnail.cpp
-c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\thumbnail.cpp(72): warning C4018: '<': signed/unsigned mismatch
-c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\thumbnail.cpp(101): warning C4018: '<': signed/unsigned mismatch
-  ConsoleApplication1.cpp
-c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\consoleapplication1.cpp(15): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
+﻿  Image.cpp
+c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\image.cpp(67): warning C4018: '<': signed/unsigned mismatch
+c:\georgi\unirepo\sd\homework\consoleapplication1\consoleapplication1\image.cpp(69): warning C4018: '<': signed/unsigned mismatch
   ConsoleApplication1.vcxproj -> C:\Georgi\uniRepo\SD\Homework\ConsoleApplication1\Debug\ConsoleApplication1.exe
   ConsoleApplication1.vcxproj -> C:\Georgi\uniRepo\SD\Homework\ConsoleApplication1\Debug\ConsoleApplication1.pdb (Partial PDB)

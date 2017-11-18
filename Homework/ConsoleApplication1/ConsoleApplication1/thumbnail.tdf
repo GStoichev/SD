@@ -1,2 +1,4 @@
-duck.bmp 20 10 30 30 outDucky.bmp
-asgasg.bmp 25 25 25 25 dasf.bmp
+; Let's test it
+duck.bmp 200 10 100 100 outDucky.bmp
+heart.bmp 200 10 50 50 outHeart.bmp
+image.bmp 200 10 1000 1000 outImage.bmp

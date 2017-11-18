@@ -1,0 +1,6 @@
+﻿  Decompressor.cpp
+c:\georgi\unirepo\sd\homework\consoleapplication2\consoleapplication2\decompressor.cpp(213): warning C4018: '<': signed/unsigned mismatch
+c:\georgi\unirepo\sd\homework\consoleapplication2\consoleapplication2\queue.h(118): warning C4172: returning address of local variable or temporary: returnME
+c:\georgi\unirepo\sd\homework\consoleapplication2\consoleapplication2\stack.h(106): warning C4172: returning address of local variable or temporary: empty
+  ConsoleApplication2.vcxproj -> C:\Georgi\uniRepo\SD\Homework\ConsoleApplication2\Debug\ConsoleApplication2.exe
+  ConsoleApplication2.vcxproj -> C:\Georgi\uniRepo\SD\Homework\ConsoleApplication2\Debug\ConsoleApplication2.pdb (Partial PDB)
