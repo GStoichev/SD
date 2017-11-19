@@ -1,13 +1,13 @@
 #pragma once
 #include <iostream>
 
-template <typename T> struct Node
-{
-	T value;
-	Node<T>* next;
-};
 template <typename T> class Stack
 {
+	template <typename T> struct Node
+	{
+		T value;
+		Node<T>* next;
+	};
 public:
 	Stack();
 	void Push(T& element);
@@ -80,6 +80,7 @@ template <typename T> void Stack<T>::Pop()
 			catch (const std::exception&)
 			{
 				std::cout << "Error : Unknown at Stack<T>::Pop" << std::endl;
+				return;
 			}
 
 		}
@@ -87,6 +88,7 @@ template <typename T> void Stack<T>::Pop()
 	else
 	{
 		std::cout << "Stack is empty, so you can't pop!" << std::endl;
+		return;
 	}
 }
 template <typename T> bool Stack<T>::Empty()

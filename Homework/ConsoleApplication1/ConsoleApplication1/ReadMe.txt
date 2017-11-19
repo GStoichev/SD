@@ -1,4 +1,4 @@
-Compiler : Visual C++, but it should work with compilers, like g++ or gcc. I test it no Visual C++, because it's default
+Compiler : Visual C++, but it should work with compilers, like g++ or gcc. I test it on Visual C++, because it's default
  compiler for Visual Studio 2017.
 
 Files stdafx.h, stdafx.cpp and targetver.h

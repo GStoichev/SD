@@ -7,11 +7,17 @@
 
 int main(int arvc,char* args[])
 {
-	Decompressor test("source.txt");
-	std::cout << test.GetCompressed() << std::endl;
-	test.Decompress();
-	std::cout << std::endl;
-
-    return 0;
+	if (arvc == 3)
+	{
+		Decompressor test(args[1],args[2]);
+		test.Decompress();
+		test.Save();
+	}
+	else
+	{
+		std::cout << "Error : Entered data is invalid, please give as first argument source file and for second argument destiantion." << std::endl;
+		return 0;
+	}
+	    return 0;
 }
 

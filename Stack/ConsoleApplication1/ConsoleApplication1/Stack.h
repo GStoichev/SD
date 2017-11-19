@@ -1,19 +1,20 @@
 #pragma once
 #include <iostream>
 
-template <typename T> struct Node
-{
-	T value;
-	Node<T>* next;
-};
 template <typename T> class Stack
 {
+	template <typename T> struct Node
+	{
+		T value;
+		Node<T>* next;
+	};
 public:
 	Stack();
 	void Push(T& element);
 	void Pop();
 	T& Top();
 	bool Empty();
+	size_t Size() const;
 	~Stack();
 private:
 	Node<T>* block;
@@ -26,6 +27,10 @@ template <typename T> Stack<T>::Stack()
 	this->block = nullptr;
 }
 //Methods
+template <typename T> size_t Stack<T>::Size() const
+{
+	return this->size;
+}
 template <typename T> void Stack<T>::Push(T& element)
 {
 	try
@@ -46,7 +51,7 @@ template <typename T> void Stack<T>::Push(T& element)
 		std::cout << "Error : Unknown at Stack<T>::Push" << std::endl;
 		return;
 	}
-	
+
 
 }
 template <typename T> void Stack<T>::Pop()
@@ -75,13 +80,15 @@ template <typename T> void Stack<T>::Pop()
 			catch (const std::exception&)
 			{
 				std::cout << "Error : Unknown at Stack<T>::Pop" << std::endl;
+				return;
 			}
-			
+
 		}
 	}
 	else
 	{
 		std::cout << "Stack is empty, so you can't pop!" << std::endl;
+		return;
 	}
 }
 template <typename T> bool Stack<T>::Empty()
@@ -105,5 +112,8 @@ template <typename T> T& Stack<T>::Top()
 //Destructor
 template <typename T>Stack<T>::~Stack()
 {
-	delete this->block;
+	while (!this->Empty())
+	{
+		this->Pop();
+	}
 }

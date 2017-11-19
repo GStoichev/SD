@@ -1,21 +1,14 @@
 #pragma once
-//#define NULL = 0;
 #include <iostream>
-//template <typename T> struct Node
-//{
-//	T value;
-//	Node<T>* next;
-//};
 
 
-
-
-
-
-
-//FIXXXXXXXXXXX
 template <typename T> class Queue
 {
+	template <typename T> struct Node
+	{
+		T value;
+		Node<T>* next;
+	};
 public:
 	Queue();
 	~Queue();
@@ -26,8 +19,6 @@ public:
 	void PushBack(T& element);
 	bool Empty();
 	void Clear();
-	
-	void Print();
 
 private:
 
@@ -71,7 +62,6 @@ template <typename T> void Queue<T>::PopFront()
 		std::cout << "Error : Unknown at Queue<T>::Pop" << std::endl;
 		return;
 	}
-
 }
 template <typename T> void Queue<T>::PushBack(T& element)
 {
@@ -94,7 +84,6 @@ template <typename T> void Queue<T>::PushBack(T& element)
 			temp->next = nullptr;
 			this->last->next = temp;
 			this->last = temp;
-
 		}
 	}
 	catch (const std::bad_alloc&)
@@ -107,8 +96,6 @@ template <typename T> void Queue<T>::PushBack(T& element)
 		std::cout << "Error : Unknown at Queue<T>::Push" << std::endl;
 		return;
 	}
-
-
 }
 template <typename T> T& Queue<T>::Front()
 {
@@ -140,27 +127,8 @@ template <typename T> size_t Queue<T>::Size()
 {
 	return this->size;
 }
-
-template <typename T> void Queue<T>::Print()
-{
-	while (!this->Empty())
-	{
-	std::cout << this->Front();
-	this->PopFront();
-	}
-}
-
 //Destructor
 template <typename T> Queue<T>::~Queue()
 {
 	this->Clear();
-	//if (this->first == this->last)
-	//{
-	//	delete this->first;
-	//}
-	//else
-	//{
-	//	delete this->first;
-	//	delete this->last;
-	//}
 }
