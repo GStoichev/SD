@@ -5,18 +5,18 @@
 
 int main(int argc,char* argv[])
 {
-	Thumbnail tdf("thumbnail.tdf");
-	//if (argc == 1)
-	//{
-	//	std::cout << "Please run program from terminal and give as an arguments names of .tdf files!" << std::endl;
-	//}
-	//else
-	//{
-	//	for (size_t i = 1; i < argc; i++)
-	//	{
-	//		Thumbnail tdf(argv[i]);
-	//	}
-	//}
+	//Thumbnail tdf("thumbnail.tdf");
+	if (argc == 1)
+	{
+		std::cout << "Please run program from terminal and give as an arguments names of .tdf files!" << std::endl;
+	}
+	else
+	{
+		for (size_t i = 1; i < argc; i++)
+		{
+			Thumbnail tdf(argv[i]);
+		}
+	}
 
 
 	return 0;

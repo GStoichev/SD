@@ -70,7 +70,6 @@ template <typename T> void Queue<T>::PushBack(T& element)
 		Node<T>* temp = new Node<T>;
 		if (this->Empty())
 		{
-
 			this->size++;
 			temp->value = element;
 			temp->next = nullptr;
