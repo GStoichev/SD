@@ -58,6 +58,8 @@ CommandLine::CommandLine()
 void CommandLine::Start()
 {
 	bool listener = true;
+	char* command;
+	char argument[256];
 	while (listener)
 	{
 		if (this->listTab.empty())
@@ -65,10 +67,23 @@ void CommandLine::Start()
 			Tab blank("about:blank");
 			this->listTab.push_after(blank);
 		}
-		char command[64];
-		char argument[256];
+		char c;
+		int length = 0;
+		while (std::cin.get(c))
+		{
+			length++;
+			if (c == ' ' || '\n')
+			{
+				break;
+			}
+		}
+		std::cin.seekg(-length,std::ios::cur);
+		command = new char[length + 1];
 		std::cin >> command;
-		int indexCommand =  CheckCommand(command);
+		
+		
+		//int indexCommand =  CheckCommand(command);
+		int indexCommand = FindIndexCommand(command);
 		if (indexCommand == -2)
 		{
 			std::cout << "Enterd command whas too long!" << std::endl;
@@ -93,13 +108,13 @@ void CommandLine::Start()
 			this->ExecuteCommand(indexCommand);
 		}
 
-
+		delete[] command;
 
 	}
 }
 int CommandLine::CheckCommand(const char* command)
 {
-	for (size_t i = 0; i < 64; i++)
+	for (size_t i = 0; i < 10; i++)
 	{
 		if (command[i] == '\0')
 		{
@@ -108,7 +123,7 @@ int CommandLine::CheckCommand(const char* command)
 	}
 	return -2;
 }
-int CommandLine::FindIndexCommand(const char*& command)
+int CommandLine::FindIndexCommand(const char* command)
 {
 	if (!strcmp(command,"GO"))
 	{

@@ -47,8 +47,7 @@ template <typename T> void Queue<T>::PopFront()
 	try
 	{
 		this->size--;
-		Node<T>* temp = new Node<T>;
-		temp = this->first->next;
+		Node<T>* temp = this->first->next;
 		delete this->first;
 		this->first = temp;
 	}

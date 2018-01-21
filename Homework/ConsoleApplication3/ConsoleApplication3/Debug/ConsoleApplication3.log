@@ -1,18 +1,4 @@
-﻿  Insert.cpp
-  CommandLine.cpp
-c:\georgi\unirepo\sd\homework\consoleapplication3\consoleapplication3\commandline.cpp(163): warning C4154: deletion of an array expression; conversion to pointer supplied
-  Generating Code...
-  Compiling...
-  Sort.cpp
-c:\georgi\unirepo\sd\homework\consoleapplication3\consoleapplication3\sort.cpp(14): warning C4018: '<': signed/unsigned mismatch
-c:\georgi\unirepo\sd\homework\consoleapplication3\consoleapplication3\sort.cpp(42): warning C4018: '<': signed/unsigned mismatch
-  Remove.cpp
-  Print.cpp
-  GO.cpp
-  Forward.cpp
-  ConsoleApplication3.cpp
-  Command.cpp
-  Back.cpp
-  Generating Code...
+﻿  CommandLine.cpp
+c:\georgi\unirepo\sd\homework\consoleapplication3\consoleapplication3\commandline.cpp(177): warning C4154: deletion of an array expression; conversion to pointer supplied
   ConsoleApplication3.vcxproj -> C:\Georgi\uniRepo\SD\Homework\ConsoleApplication3\Debug\ConsoleApplication3.exe
   ConsoleApplication3.vcxproj -> C:\Georgi\uniRepo\SD\Homework\ConsoleApplication3\Debug\ConsoleApplication3.pdb (Partial PDB)

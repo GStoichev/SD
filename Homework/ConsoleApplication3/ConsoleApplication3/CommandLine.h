@@ -22,7 +22,7 @@ private:
 	static CommandLine* instance;
 	void Start();
 	int CheckCommand(const char* command);
-	int FindIndexCommand(const char*& command);
+	int FindIndexCommand(const char* command);
 	int ExecuteCommand(const int command, const char* argument);
 	int ExecuteCommand(const int command);
 	CommandLine();

@@ -1,0 +1,14 @@
+﻿  Backup.cpp
+c:\georgi\unirepo\sd\homework\consoleapplication5\consoleapplication5\backup.cpp(121): warning C4018: '<': signed/unsigned mismatch
+c:\georgi\unirepo\sd\homework\consoleapplication5\consoleapplication5\backup.cpp(130): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Compiling...
+  Pair.cpp
+c:\georgi\unirepo\sd\homework\consoleapplication5\consoleapplication5\pair.cpp(38): warning C4018: '<': signed/unsigned mismatch
+c:\georgi\unirepo\sd\homework\consoleapplication5\consoleapplication5\pair.cpp(46): warning C4018: '<': signed/unsigned mismatch
+c:\georgi\unirepo\sd\homework\consoleapplication5\consoleapplication5\pair.cpp(93): warning C4018: '<': signed/unsigned mismatch
+c:\georgi\unirepo\sd\homework\consoleapplication5\consoleapplication5\pair.cpp(100): warning C4018: '<': signed/unsigned mismatch
+  ConsoleApplication5.cpp
+  Generating Code...
+  ConsoleApplication5.vcxproj -> C:\Georgi\uniRepo\SD\Homework\ConsoleApplication5\Debug\ConsoleApplication5.exe
+  ConsoleApplication5.vcxproj -> C:\Georgi\uniRepo\SD\Homework\ConsoleApplication5\Debug\ConsoleApplication5.pdb (Partial PDB)
