@@ -1,0 +1,5 @@
+﻿  ConsoleApplication1.cpp
+c:\georgi\unirepo\sd\readyforexam\list\consoleapplication1\consoleapplication1\consoleapplication1.cpp(16): warning C4018: '<': signed/unsigned mismatch
+c:\georgi\unirepo\sd\readyforexam\list\consoleapplication1\consoleapplication1\consoleapplication1.cpp(20): warning C4018: '<': signed/unsigned mismatch
+  ConsoleApplication1.vcxproj -> C:\Georgi\uniRepo\SD\ReadyForExam\List\ConsoleApplication1\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> C:\Georgi\uniRepo\SD\ReadyForExam\List\ConsoleApplication1\Debug\ConsoleApplication1.pdb (Partial PDB)
